@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q3_table {
+}
 
+
+.table > th{
+  color: #fff;
+  background-color: #2244aa;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.dash {
+  border-bottom: dashed #000 2px;
+}
+
+.bgcolor {
+  background-color: #ecf1f2;
+}
 /* 回答はここに書いてね */
