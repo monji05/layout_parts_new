@@ -21,7 +21,8 @@
              Webサイトを作る際、「メインコンテンツはウィンドウの横幅に応じて伸縮するけれどサイドバーは常に固定値」といったようなレイアウトをすることが多々あります。
              そのようなときに、ウィンドウサイズに対して固定のものと可変のものを横に並べるやり方がわからないとレイアウトができません。
              display: tableを使うことで実現することができるのでやってみましょう。
-             固定と書いてあるdivはウィンドウサイズが変わっても横幅が変化せず、可変と書いてあるdivはウィンドウサイズの変化に合わせて横幅が変化するようにスタイルをあてます。
+             固定と書いてあるdivはウィンドウサイズが変わっても横幅が変化せず、
+             可変と書いてあるdivはウィンドウサイズの変化に合わせて横幅が変化するようにスタイルをあてます。
 
              今回もHTMLは記述してあるので、新たにclassを付与してスタイルをあててください。
              .q4のdivにスタイルを当てる場合は、.q4に当てるのではなく新たにclassを付与してスタイルをあててください。
@@ -34,15 +35,15 @@
         <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
         <!-- 新たにタグは追加しなくてもできます。 -->
         <div class="q4 q4_table">
-          <div class="table1">
-            <div class="t1 t_cell1">固定</div>
-            <div class="t2 t_cell1">可変</div>
-            <div class="t3 t_cell1">固定</div>
+          <div class="table">
+            <div class="t1 table_cell-padding">固定</div>
+            <div class="t2 table_cell-padding">可変</div>
+            <div class="t3 table_cell-padding">固定</div>
           </div>
-          <div class="table2">
-            <div class="t4 t_cell2">可変</div>
-            <div class="t5 t_cell2">可変</div>
-            <div class="t6 t_cell2">固定</div>
+          <div class="table">
+            <div class="t4 table_cell-padding">可変</div>
+            <div class="t5 table_cell-padding">可変</div>
+            <div class="t6 table_cell-padding">固定</div>
           </div>
         </div>
         <!-- 回答はクラスq4の要素の中に書いてね -->

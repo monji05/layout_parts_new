@@ -33,10 +33,10 @@
   text-align: justify;
   line-height: 16px;
   font-size: 16px;
-  top: 333px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  top: 100%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
   margin: auto;
   pointer-events: none;
   transition: .5s;

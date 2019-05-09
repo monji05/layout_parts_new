@@ -11,22 +11,22 @@
 	margin: 0 5px;
 }
 
-.s_common {
+.light-blue {
   background-color: #00bcd4;
   color: #fff;
 }
 
-.s_error {
+.pink {
 	color: #fff;
 	background-color: #ff4081;
 }
 
-.s_disabled {
+.gray {
 	color: #fff;
 	background-color: #e5e5e5;
 }
 
-.s_shadow {
+.shadow {
 	color: #222;
 	box-shadow: 0 1px 6px rgba(0,0,0,.12),
 							0 1px 4px rgba(0,0,0,.12);
@@ -41,26 +41,6 @@
 	margin: 0 5px;
 }
 
-.m_common {
-  background-color: #00bcd4;
-  color: #fff;
-}
-
-.m_error {
-	color: #fff;
-	background-color: #ff4081;
-}
-
-.m_disabled {
-	color: #fff;
-	background-color: #e5e5e5;
-}
-
-.m_shadow {
-	color: #222;
-	box-shadow: 0 1px 6px rgba(0,0,0,.12),
-							0 1px 4px rgba(0,0,0,.12);
-}
 
 .l_button {
 	display: inline-block;
@@ -71,52 +51,45 @@
 	margin: 0 5px
 }
 
-.l_common {
-  background-color: #00bcd4;
-  color: #fff;
-}
-
-.l_error {
-	color: #fff;
-	background-color: #ff4081;
-}
-
-.l_disabled {
-	color: #fff;
-	background-color: #e5e5e5;
-}
-
-.l_shadow {
-	color: #222;
-	box-shadow: 0 1px 6px rgba(0,0,0,.12),
-							0 1px 4px rgba(0,0,0,.12);
-}
-
-
 
 .q8form {
 	background-color: #ECF1F2;
 	overflow: hidden;
 	width: 700px;
 	margin: auto;
-	padding: 15px 20px 0 20px;
+	padding: 20px;
 }
 
 .title_Form {
-	position: relative;
-	font-size: 24px;
-	font-weight: bold;
-	margin-top: 5px;
-
+  position: relative;
 }
 
-.title_Form::after {
+
+.title_Form:before {
+  box-sizing: border-box;
 	position: absolute;
-	width: 550px;
-	top: 12px;
+	top: 50%;
+  left: 0;
 	content: "";
-	border: 0.5px #ccc solid;
-	margin-left: 10px;
+  height: 1px;
+  background-color: #ccc;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.title_Form__div__p {
+  position: relative;
+  font-size: 24px;
+	font-weight: bold;
+  display: inline-block;
+}
+
+.title__span {
+  padding-right: 10px;
+}
+
+.title_Form__div__p span {
+  background-color: #ECF1F2;
 }
 
 .ul {
@@ -264,6 +237,12 @@
 	margin-left: 120px;
 	cursor: pointer;
 	line-height: 26px;
+  padding: 0 10px;
+}
+
+.submit:active {
+  background-color: #fff;
+
 }
 
 .freeform {

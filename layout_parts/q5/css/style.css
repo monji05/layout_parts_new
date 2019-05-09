@@ -5,7 +5,7 @@
   width: 500px;
   height: 500px;
   background-color: #ECF1F2;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -16,9 +16,12 @@
   text-align: center;
 }
 
+.position {
+  position: absolute;
+}
+
 .b1 {
   background-color: #ffefd3;
-  position: absolute;
   top: 40px;
   left: 200px;
   z-index: 1;
@@ -26,7 +29,6 @@
 
 .b2 {
   background-color: #7084de;
-  position: absolute;
   top: 120px;
   right: 120px;
   z-index: 2;
@@ -34,7 +36,6 @@
 
 .b3 {
   background-color: #d0ecea;
-  position: absolute;
   top: 200px;
   right: 40px;
   z-index: 3;
@@ -42,7 +43,6 @@
 
 .b4 {
   background-color: #8b7a5e;
-  position: absolute;
   bottom: 120px;
   right: 120px;
   z-index: 4;
@@ -50,7 +50,6 @@
 
 .b5 {
   background-color: #9fd6d2;
-  position: absolute;
   bottom: 40px;
   left: 200px;
   z-index: 5;
@@ -58,7 +57,6 @@
 
 .b6 {
   background-color: #fffee4;
-  position: absolute;
   bottom: 120px;
   left: 120px;
   z-index: 6;
@@ -66,7 +64,6 @@
 
 .b7 {
   background-color: #deae70;
-  position: absolute;
   top: 200px;
   left: 40px;
   z-index: 7;
@@ -74,7 +71,6 @@
 
 .b8 {
   background-color: #de70cf;
-  position: absolute;
   top: 120px;
   left: 120px;
   z-index: 8;
@@ -87,7 +83,7 @@
   background-color: #ffefd3;
   position: absolute;
   right: 0;
-  z-index: 9 ;
+  z-index: 9;
 }
 
 .b9 {

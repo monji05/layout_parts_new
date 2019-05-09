@@ -6,31 +6,27 @@
   padding: 20px;
 }
 
-.table1 {
+.table:first-child {
   display: table;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
-.t_cell1 {
+.table_cell-padding {
   display: table-cell;
   padding: 20px;
 }
 
 
-.table2 {
+.table:last-child {
   display: table;
   width: 100%;
 }
 
-.t_cell2 {
-  padding: 20px;
-  display: table-cell;
-}
 
 .t1 {
-  width: 100px;
   background-color: #fdc8b8;
+  width: 100px;
 }
 
 .t2 {
@@ -38,8 +34,8 @@
 }
 
 .t3 {
-  width: 100px;
   background-color: #b6d8ed;
+  width: 100px;
 }
 
 .t4 {

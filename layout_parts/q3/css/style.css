@@ -5,18 +5,33 @@
 }
 
 
-.table > th{
+.table tr {
+  border: solid #dedede 1px;
+}
+
+.table th{
   color: #fff;
   background-color: #2244aa;
+  border: solid #dedede 1px;
+  color: #fff;
   font-size: 18px;
   line-height: 26px;
+  padding: 10px;
 }
 
-.dash {
-  border-bottom: dashed #000 2px;
+.table td {
+  border: solid #dedede 1px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
 }
 
-.bgcolor {
+.table tr:nth-child(2n+1){
   background-color: #ecf1f2;
 }
+
+.table tr:last-child{
+  border-top: dashed #000 2px;
+}
+
 /* 回答はここに書いてね */

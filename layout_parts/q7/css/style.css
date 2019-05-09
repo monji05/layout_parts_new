@@ -6,71 +6,91 @@
 	overflow: auto;
 }
 
-.q7_float1 {
+.q7_float {
+	box-sizing: border-box;
 	float: left;
 	font-size: 16px;
+	margin-right: 50px;
 	width: 225px;
 }
 
-.q7_float2 {
-	float: right;
-	font-size: 16px;
-	width: 225px;
+.q7_float:last-child {
+	margin-right: 0;
 }
 
 
-
-.table0 {
+.table {
 	display: table;
 }
 
-.t_cell0 {
+.t_cell {
 	vertical-align: middle;
 	display: table-cell;
-	width: 225px;
 	padding-right: 50px;
-}
-
-.t_cell1 {
-	display: table-cell;
 	width: 225px;
 }
 
+.t_cell:last-child {
+	padding-right: 0;
+}
 
+.q7__inblock {
+	font-size: 0;
+}
 
 .q7inblock {
-}
-
-.q7inblock1,
-.q7inblock2 {
+	box-sizing: border-box;
 	display: inline-block;
+	font-size: 16px;
+	margin-right: 50px;
 	vertical-align: middle;
 	width: 225px;
 }
 
+.q7inblock:last-child {
+	margin-right: 0;
+}
 
-
-.q7flex {
-	display: flex;
+.q7__flex {
 	align-items: flex-end;
+	display: flex;
+	justify-content: flex-end;
 	justify-content: space-around;
 }
 
-.q7flex1 {
+.q7flex {
+	box-sizing: border-box;
 	width: 225px;
 }
 
 
+.border__font-size {
+	font-size: 0;
+	box-sizing: border-box;
+}
 
-.q7-5 {
+.q7__inlineblock {
 	display: inline-block;
-}
-
-.q7-5text1 {
+	vertical-align: top;
 	width: 300px;
+
 }
 
-.q7-5text2 {
+.q7__inlineblock__div {
+	font-size: 16px;
+}
+
+.q7__inlineblock-margin {
+	display: inline-block;
+	width: 100%;
+	margin-left: -300px;
+	padding-left: 350px;
+	box-sizing: border-box;
+
+}
+
+.q7__inlineblock-margin__div {
+	font-size: 16px;
 }
 
 /* 回答はここに書いてね */

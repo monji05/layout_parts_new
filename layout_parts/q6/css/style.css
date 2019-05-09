@@ -12,29 +12,31 @@
   padding: 10px 0 10px 0;
 }
 
-.marg {
+.margin {
   text-align: center;
   background-color: #e6f2ff;
   width: 90px;
   padding: 10px 0 10px 0;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.q6_ta {
+.q6__table {
   display: table;
 }
 
-.q6_table{
+.q6__table__div{
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  vertical-align: middle;
 }
 
-.q6_p {
-  display: inline-block;
+
+.q6__table__div__p {
   background-color: #fff;
+  display: inline-block;
   padding: 10px;
 }
+
 
 .q6-flex {
   display: flex;
@@ -48,22 +50,30 @@
   padding: 10px;
 }
 
-.q6_posi {
+.q6__posi-div {
   position: relative;
 }
 
-.q6_position {
+.q6__posi-div__p {
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   position: absolute;
-  margin: 85px 95px;
+
 }
 
-.q6_posi_fle {
+.q6__position-div {
   position: relative;
 }
 
-.q6_posi_p {
-  position: relative;
-  transform: translate(96.5px,82px);
-  padding: 10px;
+.q6__position-div__p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
+
+
 /* 回答はここに書いてね */
