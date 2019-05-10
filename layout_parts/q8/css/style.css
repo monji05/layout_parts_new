@@ -275,6 +275,7 @@
 .submit:active {
   background-color: #fff;
   color: #00BCD4;
+  outline: none;
 }
 
 .freeform {
