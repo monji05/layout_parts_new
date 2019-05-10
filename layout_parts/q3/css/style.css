@@ -4,6 +4,11 @@
 .q3_table {
 }
 
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+
 
 .table tr {
   border: solid #dedede 1px;

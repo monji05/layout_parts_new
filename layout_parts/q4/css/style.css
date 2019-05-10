@@ -6,10 +6,13 @@
   padding: 20px;
 }
 
-.table:first-child {
+.table {
   display: table;
-  margin-bottom: 20px;
   width: 100%;
+}
+
+.table:first-child {
+  margin-bottom: 20px;
 }
 
 .table_cell-padding {
@@ -17,11 +20,6 @@
   padding: 20px;
 }
 
-
-.table:last-child {
-  display: table;
-  width: 100%;
-}
 
 
 .t1 {

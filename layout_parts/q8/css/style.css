@@ -1,27 +1,19 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.s_button {
-	display: inline-block;
-	vertical-align: middle;
-  font-size: 16px;
-	line-height: 26px;
-  border-radius: 3px;
-	padding: 0 15px;
-	margin: 0 5px;
-}
 
-.light-blue {
+
+.common {
   background-color: #00bcd4;
   color: #fff;
 }
 
-.pink {
+.error {
 	color: #fff;
 	background-color: #ff4081;
 }
 
-.gray {
+.disabled {
 	color: #fff;
 	background-color: #e5e5e5;
 }
@@ -32,7 +24,17 @@
 							0 1px 4px rgba(0,0,0,.12);
 }
 
-.m_button {
+.small_button {
+	display: inline-block;
+	vertical-align: middle;
+  font-size: 16px;
+	line-height: 26px;
+  border-radius: 3px;
+	padding: 0 15px;
+	margin: 0 5px;
+}
+
+.middle_button {
 	display: inline-block;
 	border-radius: 5px;
 	font-size: 20px;
@@ -42,7 +44,7 @@
 }
 
 
-.l_button {
+.large_button {
 	display: inline-block;
 	border-radius: 7px;
 	font-size: 24px;
@@ -60,8 +62,11 @@
 	padding: 20px;
 }
 
+
+
 .title_Form {
   position: relative;
+  margin-bottom: 20px;
 }
 
 
@@ -77,7 +82,7 @@
   width: 100%;
 }
 
-.title_Form__div__p {
+.title_Form__text {
   position: relative;
   font-size: 24px;
 	font-weight: bold;
@@ -86,38 +91,53 @@
 
 .title__span {
   padding-right: 10px;
+  background-color: #ECF1F2
 }
 
-.title_Form__div__p span {
-  background-color: #ECF1F2;
+.form-box {
+  float: left;
+  padding-left: 40px;
 }
 
-.ul {
-	float: left;
-	text-align: right;
-}
-
-.li {
-	margin: 0 0 20px 40px;
-	list-style: none;
-}
-
-.label {
-	line-height: 25px;
-	margin-right: 15px;
+.information {
+  float: left;
+  text-align: right;
 }
 
 .span {
 	color: #f00;
 }
 
+.label {
+  line-height: 25px;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.label:first-child {
+  margin-top: 0;
+}
+
+.input-form {
+  float: left;
+  display: inline-grid;
+  line-height: 25px;
+  text-align: left;
+}
+
+
 .input {
 	border: 0;
+  box-sizing: border-box;
 	border-radius: 3px;
 	width: 180px;
 	line-height: 25px;
-	float: right;
-	padding-left: 5px;
+	padding-left:5px;
+  margin-top: 20px;
+}
+
+.input:first-child {
+  margin-top: 0;
 }
 
 .input:focus, .freeform:focus {
@@ -125,14 +145,19 @@
 	outline: 0;
 }
 
+.gender {
+  margin-top: 20px;
+}
+
 .radio {
 	-webkit-appearance: none;
+  display: none;
 }
 
 .radio + .radio-label {
 	padding-left: 20px;
 	position: relative;
-	margin-left: -10px;
+	margin-top: 20px;
 	cursor: pointer;
 }
 
@@ -165,29 +190,31 @@
 	margin-right: 70px;
 }
 
+.select-wrap {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
 .select {
+  position: relative;
 	-webkit-appearance: none;
 	cursor: pointer;
 	background-color: #fff;
 }
 
-.select-label {
-	position: relative;
-}
 
-.select-label::after {
-	position: absolute;
-	content:  '';
+.select-wrap::after {
+  position: absolute;
+  display: block;
+	content: '';
   width: 8px;
   height: 8px;
-  display:  block;
+  bottom: 40%;
+  right: 5%;
   border-bottom: solid 2px #E5E5E5;
   border-right: solid 2px #E5E5E5;
   transform: rotate(45deg);
-  position:  absolute;
-  bottom:  4px;
-	left: 210px;
-  margin:  auto;
 	cursor: pointer;
 	pointer-events: none;
 }
@@ -196,10 +223,14 @@
 	-webkit-appearance: none;
 }
 
+.checkbox-text {
+  text-align: right;
+  margin-top: 20px;
+}
+
 .checkbox-label {
 	position: relative;
-	padding-left: 20px;
-	margin-right: 5px;
+  padding-left: 24px;
 }
 
 .checkbox-label::before {
@@ -230,26 +261,27 @@
 }
 
 .submit {
+  float: left;
 	border-radius: 6px;
 	background-color: #00BCD4;
 	color: #fff;
 	border: 0;
-	margin-left: 120px;
+  margin: 20px 0 0 120px;
 	cursor: pointer;
 	line-height: 26px;
-  padding: 0 10px;
+  font-size: 16px;
 }
 
 .submit:active {
   background-color: #fff;
-
+  color: #00BCD4;
 }
 
 .freeform {
 	width: 370px;
 	height: 190px;
+  float: right;
 	resize: none;
-	float: right;
 	border: 0;
 	border-radius: 3px;
 	padding: 10px 0 0 10px;

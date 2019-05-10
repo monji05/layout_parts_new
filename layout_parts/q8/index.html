@@ -32,26 +32,26 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div class="s_button light-blue">common</div>
-            <div class="s_button pink">error</div>
-            <div class="s_button gray">disabled</div>
-            <div class="s_button shadow">shadow</div>
+            <div class="small_button common">common</div>
+            <div class="small_button error">error</div>
+            <div class="small_button disabled">disabled</div>
+            <div class="small_button shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div class="m_button light-blue">common</div>
-            <div class="m_button pink">error</div>
-            <div class="m_button gray">disabled</div>
-            <div class="m_button shadow">shadow</div>
+            <div class="middle_button common">common</div>
+            <div class="middle_button error">error</div>
+            <div class="middle_button disabled">disabled</div>
+            <div class="middle_button shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div class="l_button light-blue">common</div>
-            <div class="l_button pink">error</div>
-            <div class="l_button gray">disabled</div>
-            <div class="l_button shadow">shadow</div>
+            <div class="large_button common">common</div>
+            <div class="large_button error">error</div>
+            <div class="large_button disabled">disabled</div>
+            <div class="large_button shadow">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -101,50 +101,46 @@
           <div class="q8">
             <div class="q8form">
               <div class="title_Form">
-                  <p class="title_Form__div__p"><span class="title__span">Form Exercise</span></p>
+                  <p class="title_Form__text"><span class="title__span">Form Exercise</span></p>
               </div>
               <div class="profile">
                 <form class="" action="index.html" method="post">
-                  <ul class="ul">
-                    <li class="li">
-                      <label class="label" for="namae">名前<span class="span">*</span></label>
+                  <div class="form-box">
+                    <div class="information">
+                      <p class="label" for="namae">名前<span class="span">*</span></p>
+                      <p class="label" for="sex">性別</p>
+                      <p class="label" for="">出身</p>
+                      <p class="label" for="">Eメール<span class="span">*</span></p>
+                      <p class="label" for="">電話番号</p>
+                    </div>
+                    <div class="input-form">
                       <input class="input" type="text" name="name" id="name" required="required">
-                    </li>
-                    <li class= "li sex">
-                      <label class="label" for="sex">性別</label>
-                      <input class="radio" type="radio" id="male" name="sex">
-                      <label class="radio-label" for="male">男性</label>
-                      <input class="radio" type="radio" id="female" name="sex">
-                      <label class="radio-label" for="female">女性</label>
-                    </li>
-                    <li class="li">
-                      <label class="label select-label" for="">出身</label>
-                      <select class="select input" name="born">
-                        <option value="tokyo">東京</option>
-                        <option value="saitama">埼玉</option>
-                        <option value="tiba">千葉</option>
-                        <option value="kanagawa">神奈川</option>
-                      </select>
-                    </li>
-                    <li class="li">
-                      <label class="label" for="">Eメール<span class="span">*</span></label>
+                      <div class="gender">
+                        <input class="radio" type="radio" id="male" name="sex">
+                        <label class="radio-label" for="male">男性</label>
+                        <input class="radio" type="radio" id="female" name="sex">
+                        <label class="radio-label" for="female">女性</label>
+                      </div>
+                      <div class="select-wrap">
+                        <select class="input select" name="born">
+                          <option value="tokyo">東京</option>
+                          <option value="saitama">埼玉</option>
+                          <option value="tiba">千葉</option>
+                          <option value="kanagawa">神奈川</option>
+                        </select>
+                      </div>
                       <input class="input" type="email" placeholder="ex)hoge@gmail.com" required="required">
-                    </li>
-                    <li class="li">
-                      <label class="label" for="">電話番号</label>
                       <input class="input" type="tel" placeholder="ex)08012345678">
-                    </li>
-                    <li class="li input">
-                      <input type="checkbox" class="checkbox" id="more20">
-                      <label class="checkbox-label" for="more20">20歳以上です</label>
-                    </li>
-                    <li class="li">
+                      <div class="checkbox-text">
+                        <input type="checkbox" class="checkbox" id="more20">
+                        <label class="checkbox-label" for="more20">20歳以上です</label>
+                      </div>
                       <button type="submit" class="submit" name="submit">送信</button>
-                    </li>
-                  </ul>
-                  <li class="li">
+                    </div>
+                  </div>
+                  <div class="freeform-box">
                     <textarea class="freeform" name="name" rows="10" cols="80" placeholder="何かあれば入力してください。"></textarea>
-                  </li>
+                  </div>
                 </form>
               </div>
             </div>

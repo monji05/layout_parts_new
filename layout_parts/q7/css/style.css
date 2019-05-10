@@ -3,7 +3,6 @@
 /* 回答はここに書いてね */
 
 .q7_floatbox {
-	overflow: auto;
 }
 
 .q7_float {
@@ -16,6 +15,12 @@
 
 .q7_float:last-child {
 	margin-right: 0;
+}
+
+.clearfix:after {
+	display: block;
+  content: "";
+	clear: both;
 }
 
 
